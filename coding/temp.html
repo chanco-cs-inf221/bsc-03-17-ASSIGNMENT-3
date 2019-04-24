@@ -1,0 +1,25 @@
+<!-- this program converts temperature from  °Celsius to °Fahrenheit and virseversa . Developed by bsc/03/17 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <title>Temperature Convetor</title>
+         <link rel="Stylesheet"href="temp.css">
+    </head>
+        <body>
+             <h1 align='center'>TEMPERATURE CONVERTING WEB-APPLICATION</h1>
+                 <form id="tempCalculation" onsubmit="calculateTemp(); return false">
+                 <label for="temp">Enter the temperature you would like to convert.</label> <br>
+                 <input name="temp" id="temp" type="number"> 
+    
+                 <select name="temp_diff" id="temp_diff">
+                 <option value="1">°Celsius</option>
+                 <option value="2">°Fahrenheit</option>
+                 </select> <br>
+
+                 <input name="temp" type="submit"> <br>
+                 <span id="result_Container"></span>
+                 </form>
+                <script type="text/javascript" src="temp.js"></script>
+
+         </body>
+</html>
